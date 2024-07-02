@@ -15,7 +15,7 @@ body{
 
 .input_with_title_holder{
 	width: 250px;
-	height: 80px;
+	height: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
@@ -23,6 +23,7 @@ body{
 	background: #434343;
 	margin-bottom: 12px;
 	border: 1px solid #b5b5b5;
+	overflow: hidden;
 }
 
 .input_with_title_holder>.title{
@@ -47,6 +48,7 @@ body{
 	align-items: center;
 	color: white;
 	font-family: system-ui;
+	flex-shrink: 0;
 }
 
 .input_with_title_holder> .input_holder > input{
@@ -57,4 +59,49 @@ body{
 	border: none;
 	outline: none;
 	color: white;
+}
+
+.input_with_title_holder>.resete_button{
+	width: 100%;
+	flex: auto;
+	background:rgb(80 80 80);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: system-ui;
+	cursor: pointer;
+	gap: 1px;
+}
+
+.input_with_title_holder>.resete_button>.icon{
+	width: 20px;
+	height: 100%;
+	/* background:rgb(100 100 100); */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: system-ui;
+	cursor: pointer;
+}
+.input_with_title_holder>.resete_button>.icon>img{
+	max-width: 55%;
+	max-height: 55%;
+}
+.input_with_title_holder>.resete_button>.text{
+	/* width: 80px; */
+	/* height:40px; */
+	/* background:rgb(120 120 120); */
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	color: white;
+	font-family: system-ui;
+	cursor: pointer;
+	padding-bottom: 3px;
+	font-size:14px;
 }

@@ -14,6 +14,23 @@ function listen_to_click_enter(){
 	    	cheek_input(value)
 	    }
 	})
+
+	var input_1=document.getElementById('input_1');
+	input_1.addEventListener('keyup',(e)=>{
+	    if (event.key === 'Enter') {
+	    	var value = e.currentTarget.value
+	    	cheek_input(value)
+	    }
+	})
+
+	var input_2=document.getElementById('input_2');
+	input_2.addEventListener('keyup',(e)=>{
+	    if (event.key === 'Enter') {
+	    	var value = e.currentTarget.value
+	    	cheek_input(value)
+	    }
+	})
+
 }
 
 listen_to_click_enter()
